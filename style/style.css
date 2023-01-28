@@ -116,17 +116,8 @@ h1 {
     margin: 30px 0;
 }
 
-div .img {
-    width: 120px !important;
-    height: 100px !important;
-    display: flex !important;
-}
-
-a[data-fancybox] img {
+sa[data-fancybox] img {
     cursor: zoom-in;
-}
-
-.img-fancy-box {
     width: 200px !important;
     height: 150px !important;
 }
