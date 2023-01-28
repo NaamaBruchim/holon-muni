@@ -172,7 +172,8 @@ input[type="radio"]:checked {
     font-size: 15px;
 }
 
-.about-img {
+.about-img img {
     width: 200px !important;
     height: 150px !important;
+    margin: 4px;
 }
