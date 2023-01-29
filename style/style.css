@@ -2,12 +2,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Henny+Penny&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz@8..144&display=swap');
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
-@media (min-width:992px) {
+@media (max-width:992px) {
     .navbar-item-wrapper {
-        flex-direction: row !important;
+        flex-direction: column !important;
     }
-    .sponsers-container {
-        grid-auto-flow: column !important;
+    .contact-form-wrapper label.form-label {
+        display: none !important;
+    }
+    .contact-form-wrapper input::placeholder,
+    .contact-form-wrapper textarea::placeholder {
+        opacity: 1 !important;
     }
 }
 
@@ -59,7 +63,7 @@ a .bg-none {
 }
 
 .navbar-item-wrapper {
-    flex-direction: column;
+    flex-direction: row;
     width: 100%;
     justify-content: space-between;
 }
@@ -132,6 +136,11 @@ a[data-fancybox] img:hover {
     max-width: 60%;
     /* Prevent opacity change when dragging up/down */
     --fancybox-opacity: 1;
+}
+
+.contact-form-wrapper input:not([type=tel]):not([type=email])::placeholder,
+.contact-form-wrapper textarea::placeholder {
+    opacity: 0;
 }
 
 input[type=text]:focus,
